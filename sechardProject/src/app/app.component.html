@@ -1,0 +1,16 @@
+<div style="text-align:center">
+  <form class="form">
+    <h4>İnput:</h4>
+    <fieldset>
+      <input type="radio" value="interface" [(ngModel)]="type" name="group1">İnterface
+      <input type="radio" value="vlan"      [(ngModel)]="type"  name="group1">Vlan
+    </fieldset>
+    <br>
+    <textarea name="inputWord"  cols="100" rows="10" style="resize: none;" [(ngModel)]="inputWorld" ></textarea><br>
+    <input type="button" value="Gönder"  class="btn btn-success" (click)="postInput($event)">
+    <br>
+    <h4> Output:</h4>
+    <br>
+    <textarea name="outputWord"  cols="100" rows="10" style="resize: none;" [(ngModel)]="outputWorld" disabled></textarea><br>
+  </form>
+</div>
